@@ -1,0 +1,1 @@
+json.partial! "server_error_events/server_error_event", server_error_event: @server_error_event

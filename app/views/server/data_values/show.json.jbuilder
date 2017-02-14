@@ -1,0 +1,1 @@
+json.partial! "server_data_values/server_data_value", server_data_value: @server_data_value

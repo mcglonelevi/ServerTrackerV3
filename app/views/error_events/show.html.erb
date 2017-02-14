@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Message:</b>
+  <%= @error_event.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_server_error_event_path(@error_event.server, @error_event) %> |
+<%= link_to 'Back', server_error_events_path(@error_event.server) %>

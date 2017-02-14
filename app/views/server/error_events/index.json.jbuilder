@@ -1,0 +1,1 @@
+json.array! @server_error_events, partial: 'server_error_events/server_error_event', as: :server_error_event

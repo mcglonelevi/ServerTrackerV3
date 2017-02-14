@@ -1,0 +1,1 @@
+json.array! @server_data_values, partial: 'server_data_values/server_data_value', as: :server_data_value

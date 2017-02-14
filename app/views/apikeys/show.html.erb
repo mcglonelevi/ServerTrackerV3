@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Publickey:</strong>
+  <%= @apikey.publickey %>
+</p>
+
+<p>
+  <strong>Privatekey:</strong>
+  <%= @apikey.privatekey %>
+</p>
+
+<%= link_to 'Edit', edit_apikey_path(@apikey) %> |
+<%= link_to 'Back', apikeys_path %>
