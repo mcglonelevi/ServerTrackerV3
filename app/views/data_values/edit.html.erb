@@ -1,6 +1,7 @@
 <h1>Editing data_value</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', [@data_value.server, @data_value] %> |
-<%= link_to 'Back', server_data_values_path(@data_value.server) %>
+<br />
+<%= link_to 'Show', [@data_value.server, @data_value], class: "btn btn-primary" %>
+<br /><br />
+<%= link_to '<<Back', server_data_values_path(@data_value.server), class: "btn btn-primary" %>

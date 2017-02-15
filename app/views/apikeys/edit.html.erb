@@ -1,6 +1,7 @@
 <h1>Editing Apikey</h1>
 
 <%= render 'form', apikey: @apikey %>
-
-<%= link_to 'Show', @apikey %> |
-<%= link_to 'Back', apikeys_path %>
+<br />
+<%= link_to 'Show', @apikey, class: "btn btn-primary" %>
+<br /><br />
+<%= link_to '<< Back', apikeys_path, class: "btn btn-primary" %>

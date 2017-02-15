@@ -6,24 +6,27 @@
 </p>
 
 <p>
-  <strong>Ipaddress:</strong>
+  <strong>IP Address:</strong>
   <%= @server.ipaddress %>
 </p>
 
 <p>
-  <strong>Hostname:</strong>
+  <strong>Host Name:</strong>
   <%= @server.hostname %>
 </p>
 
 <p>
-  <strong>Loginname:</strong>
+  <strong>Login Name:</strong>
   <%= @server.loginname %>
 </p>
 
 <p>
-  <strong>Loginpassword:</strong>
+  <strong>Login Password:</strong>
   <%= @server.loginpassword %>
 </p>
 
-<%= link_to 'Edit', edit_server_path(@server) %> |
-<%= link_to 'Back', servers_path %>
+<%= link_to 'Edit', edit_server_path(@server), class: 'btn btn-primary' %>
+<%= link_to 'Data Values', server_data_values_path(@server), class: 'btn btn-primary' %>
+<%= link_to 'Error Events', server_error_events_path(@server), class: 'btn btn-primary' %>
+<br /><br />
+<%= link_to '<< Back', servers_path, class: 'btn btn-default' %>

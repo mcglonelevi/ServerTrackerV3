@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :publickey %>
-    <%= f.text_field :publickey %>
+  <div class="field form-group">
+    <label for="">Public Key</label>
+    <%= f.text_field :publickey, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :privatekey %>
-    <%= f.text_field :privatekey %>
+  <div class="field form-group">
+    <label for="">Private Key</label>
+    <%= f.text_field :privatekey, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Update/Create API Key", class: "btn btn-success" %>
   </div>
 <% end %>

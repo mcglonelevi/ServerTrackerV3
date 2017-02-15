@@ -11,11 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :message %><br />
-    <%= f.text_field :message %>
+    <%= f.text_field :message, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Error Event", class: "btn btn-success" %>
   </div>
 <% end %>

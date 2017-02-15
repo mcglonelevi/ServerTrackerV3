@@ -1,23 +1,25 @@
-<h1>Listing error_events</h1>
+<h1>Listing Error Events for <%= @server.name %></h1>
 
 <table>
   <tr>
-    <th>Message</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th class="col-xs-3">Message</th>
+    <th class="col-xs-3">Created At</th>
+    <th class="col-xs-6" colspan="3">Actions</th>
   </tr>
 
 <% @error_events.each do |error_event| %>
   <tr>
-    <td><%= error_event.message %></td>
-    <td><%= link_to 'Show', [error_event.server, error_event] %></td>
-    <td><%= link_to 'Edit', edit_server_error_event_path(error_event.server, error_event) %></td>
-    <td><%= link_to 'Destroy', [error_event.server, error_event], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="col-xs-3"><%= error_event.message %></td>
+    <td class="col-xs-3"><%= error_event.created_at %></td>
+    <td class="col-xs-6">
+      <%= link_to 'Destroy', [error_event.server, error_event], :confirm => 'Are you sure?', :method => :delete, class: "btn btn-danger" %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Error event', new_server_error_event_path(params[:server_id]) %>
+<%= link_to 'New Error event', new_server_error_event_path(params[:server_id]), class: "btn btn-success" %>
+<br /><br />
+<%= link_to '<< Back to server', @server, class: "btn btn-default" %>

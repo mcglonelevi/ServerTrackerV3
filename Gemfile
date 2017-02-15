@@ -56,3 +56,5 @@ gem 'nested_scaffold'
 
 # Devise for login
 gem 'devise'
+
+gem 'bootstrap-sass', '~> 3.3.6'

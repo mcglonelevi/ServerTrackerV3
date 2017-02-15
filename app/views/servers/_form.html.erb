@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :ipaddress %>
-    <%= f.text_field :ipaddress %>
+  <div class="form-group">
+    <label>IP Address</label>
+    <%= f.text_field :ipaddress, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :hostname %>
-    <%= f.text_field :hostname %>
+  <div class="form-group">
+    <label>Host Name</label>
+    <%= f.text_field :hostname, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :loginname %>
-    <%= f.text_field :loginname %>
+  <div class="form-group">
+    <label>Login Name</label>
+    <%= f.text_field :loginname, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :loginpassword %>
-    <%= f.text_field :loginpassword %>
+  <div class="form-group">
+    <label>Login Password</label>
+    <%= f.text_field :loginpassword, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Update Server", class: "btn btn-warning" %>
   </div>
 <% end %>
