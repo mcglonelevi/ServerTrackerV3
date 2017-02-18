@@ -23,11 +23,14 @@ class ErrorEventsController < ApplicationController
   # POST servers/1/error_events
   def create
     @error_event = @server.error_events.build(error_event_params)
-
-    if @error_event.save
-      redirect_to([@error_event.server, @error_event], notice: 'Error event was successfully created.')
-    else
-      render action: 'new'
+    respond_to do |format|
+      if @error_event.save
+        format.html { redirect_to([@error_event.server, @error_event], notice: 'Error event was successfully created.') }
+        format.json { render :show, status: :created, location: @server }
+      else
+        format.html { render :new }
+        format.json { render json: @server.errors, status: :unprocessable_entity }
+      end
     end
   end
 

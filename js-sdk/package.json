@@ -1,0 +1,16 @@
+{
+  "name": "js-sdk",
+  "version": "1.0.0",
+  "description": "Javascript SDK for working with the Server Tracker API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Levi McGlone",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "request": "^2.79.0",
+    "uri": "^0.1.0"
+  }
+}
