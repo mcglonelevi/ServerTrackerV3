@@ -1,5 +1,7 @@
 <h1>New API Key</h1>
 
 <%= render 'form', apikey: @apikey %>
-
+<br />
+<button onclick="genApiKey()" class="btn btn-info">Generate API Keys</button>
+<br /><br />
 <%= link_to 'Back', apikeys_path %>
