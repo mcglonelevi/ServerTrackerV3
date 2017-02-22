@@ -8,10 +8,10 @@ class ApplicationController < ActionController::Base
   def custom_user_auth
 
     if (
-      params["publickey"]  &&
-      params["timestamp"]  &&
-      params["hash"] &&
-      valid_key(params["publickey"], params["timestamp"], params["hash"]))
+    params["publickey"]  &&
+        params["timestamp"]  &&
+        params["hash"] &&
+        valid_key(params["publickey"], params["timestamp"], params["hash"]))
 
 
       puts params["publickey"]
@@ -36,5 +36,6 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
+
 
 end
